@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .navbar, .about .col-md-6, .testimonials, .testimonials .card {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .home {
+        background: url(../images/mobile/image-header.jpg);
+        background-size: cover;
+        background-position: bottom;
+
+    }
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+}

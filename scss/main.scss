@@ -1,0 +1,173 @@
+@import 'config';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $barlow;
+}
+
+nav {
+    padding: 2rem 5rem;
+    background: #3ebfff;
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    a {
+        color: $white;
+    }
+    .navbar-nav {
+        a {
+            font-weight: 600;
+            color: $white;
+        }
+        .contact-btn {
+            background-color: $white;
+            color: $dark-gray;
+            padding: 0.6rem 2rem;
+            border-radius: 2rem;
+            font-family: $fraunces;
+        }
+    }
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .heading {
+        font-size: 4rem;
+        font-family: $fraunces;
+        color: $white;
+        letter-spacing: 10px;
+        padding: 2rem;
+
+    }
+}
+.about {
+    .container-fluid {
+        padding: 0;
+
+        .col-md-6 {
+            background-size: cover;
+            background-position: center;
+            height: 30rem;
+            padding: 8rem;
+            color: $dark-gray;
+            h2 {
+                font-family: $fraunces;
+                font-weight: 900;
+                line-height: 3rem;
+            }
+            p {
+                line-height: 1.8rem;
+                font-size: 1.2rem;
+            }
+            a {
+                text-decoration: none;
+                color: $dark-gray;
+                position: relative;
+                z-index: 10;
+                font-size: 1.2rem;
+                font-family: $fraunces;
+                
+                &::after {
+                    content: "";
+                    height: 0.8rem;
+                    background: $yellow;
+                    width: 7rem;
+                    position: absolute;
+                    bottom: -5px;
+                    left: -5px;
+                    z-index: -1;
+                    opacity: 0.6;
+                   
+                }
+                
+            }
+        }
+
+        .transform {
+            background-image: url(../images/desktop/image-transform.jpg);
+        }
+        .stand-out {
+            background-image: url(../images/desktop/image-stand-out.jpg);
+        }
+        .graphic {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+        .photography {
+            background-image: url(../images/desktop/image-photography.jpg);
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+    }
+}
+
+.testimonials {
+    padding: 6rem;
+    color: $dark-gray;
+
+    .heading {
+        font-family: $fraunces;
+        padding: 3rem;
+    }
+    .card {
+        border: none;
+        padding: 2rem;
+        text-align: center;
+        img {
+            width: 5rem;
+            border-radius: 3rem;
+            margin: 1rem;
+        }
+        .client {
+            font-family: $fraunces;
+            font-weight: 900;
+        }
+        .job{
+            font-size: 0.8rem;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+    }
+}
+.projects {
+    .col-md-6 {
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+        width: 25%;
+    }
+}
+.footer {
+    background: $dark-moderate-cyan;
+    padding: 5rem;
+    color: $dark-cyan;
+    h2 {
+        font-weight: 900;
+        font-family: $fraunces;
+        padding: 1rem;
+    }
+    .links {
+        a {
+            color: $dark-cyan;
+            text-decoration: none;
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+    .social {
+        img {
+            width: 16px;
+            margin: 1.5rem;
+        }
+    }
+}
+
+@import 'responsive';
